@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    background: linear-gradient(45deg, #db2f4c 0%, #ffffff 50%, #db2f4c 100%);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid red;
+    padding: 20px;
+    background-color: #db2f4c;
+    box-shadow: #db2f4c 0px 19px 38px, #db2f4c 0px 15px 12px;
+    border-radius: 30px;
+}
+
+#calculator {
+    display: grid;
+}
+
+h1,
+h3,
+label,
+p {
+    color: white;
+    margin-top: 20px;
+}
+
+input {
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0px solid red;
+    outline: none;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 0px solid red;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #571e28;
+    color: white;
+}
+
+p {
+    color: yellow;
+    margin-top: 20px;
+    display: inline-block;
+    animation: sizeAnimation 2s infinite;
+}
+
+@media (max-width: 600px) {
+    #mainContainer {
+        width: 80%;
+    }
+}
+
+@keyframes sizeAnimation {
+    0% {
+        font-size: 14px;
+    }
+
+    50% {
+        font-size: 16px;
+    }
+
+    100% {
+        font-size: 14px;
+    }
+}
